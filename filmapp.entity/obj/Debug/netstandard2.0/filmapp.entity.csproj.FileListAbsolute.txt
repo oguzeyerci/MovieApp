@@ -1,0 +1,9 @@
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\bin\Debug\netstandard2.0\filmapp.entity.deps.json
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\bin\Debug\netstandard2.0\filmapp.entity.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\bin\Debug\netstandard2.0\filmapp.entity.pdb
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\obj\Debug\netstandard2.0\filmapp.entity.csprojAssemblyReference.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\obj\Debug\netstandard2.0\filmapp.entity.AssemblyInfoInputs.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\obj\Debug\netstandard2.0\filmapp.entity.AssemblyInfo.cs
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\obj\Debug\netstandard2.0\filmapp.entity.csproj.CoreCompileInputs.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\obj\Debug\netstandard2.0\filmapp.entity.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.entity\obj\Debug\netstandard2.0\filmapp.entity.pdb

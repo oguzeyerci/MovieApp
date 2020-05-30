@@ -1,0 +1,12 @@
+C:\Users\oguze\Desktop\filmapp\filmapp.data\bin\Debug\netstandard2.0\filmapp.data.deps.json
+C:\Users\oguze\Desktop\filmapp\filmapp.data\bin\Debug\netstandard2.0\filmapp.data.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.data\bin\Debug\netstandard2.0\filmapp.data.pdb
+C:\Users\oguze\Desktop\filmapp\filmapp.data\bin\Debug\netstandard2.0\filmapp.entity.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.data\bin\Debug\netstandard2.0\filmapp.entity.pdb
+C:\Users\oguze\Desktop\filmapp\filmapp.data\obj\Debug\netstandard2.0\filmapp.data.csprojAssemblyReference.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.data\obj\Debug\netstandard2.0\filmapp.data.AssemblyInfoInputs.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.data\obj\Debug\netstandard2.0\filmapp.data.AssemblyInfo.cs
+C:\Users\oguze\Desktop\filmapp\filmapp.data\obj\Debug\netstandard2.0\filmapp.data.csproj.CoreCompileInputs.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.data\obj\Debug\netstandard2.0\filmapp.data.csproj.CopyComplete
+C:\Users\oguze\Desktop\filmapp\filmapp.data\obj\Debug\netstandard2.0\filmapp.data.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.data\obj\Debug\netstandard2.0\filmapp.data.pdb

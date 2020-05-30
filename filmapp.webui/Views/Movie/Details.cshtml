@@ -1,0 +1,19 @@
+@model filmapp.entity.Movie
+
+<div class="card text-white bg-dark">
+  <div class="card-header text-center">
+    <img src="~/images/1-@Model.ImageUrl" class="img-fluid" alt="Responsive image">
+  </div>
+  <div class="card-body text-center">
+    <h4 class="card-title">@Model.Name</h4>
+    <p class="card-text">@Html.Raw(Model.Review)</p>
+  </div>
+  <div class="card-body">
+    <a href="/Movie/List/@Model.Category" class="text-muted">/@Model.Category</a> 
+  </div>
+  <div class="card-footer text-muted">
+    <strong>Oyuncular:</strong> @Model.Stars<br/>
+    <strong>Yönetmen:</strong> @Model.Director<br/>
+    <strong>Çıkış Yılı:</strong> @Model.Year
+  </div>
+</div>

@@ -1,0 +1,14 @@
+C:\Users\oguze\Desktop\filmapp\filmapp.business\bin\Debug\netstandard2.0\filmapp.business.deps.json
+C:\Users\oguze\Desktop\filmapp\filmapp.business\bin\Debug\netstandard2.0\filmapp.business.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.business\bin\Debug\netstandard2.0\filmapp.business.pdb
+C:\Users\oguze\Desktop\filmapp\filmapp.business\bin\Debug\netstandard2.0\filmapp.data.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.business\bin\Debug\netstandard2.0\filmapp.entity.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.business\bin\Debug\netstandard2.0\filmapp.data.pdb
+C:\Users\oguze\Desktop\filmapp\filmapp.business\bin\Debug\netstandard2.0\filmapp.entity.pdb
+C:\Users\oguze\Desktop\filmapp\filmapp.business\obj\Debug\netstandard2.0\filmapp.business.csprojAssemblyReference.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.business\obj\Debug\netstandard2.0\filmapp.business.AssemblyInfoInputs.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.business\obj\Debug\netstandard2.0\filmapp.business.AssemblyInfo.cs
+C:\Users\oguze\Desktop\filmapp\filmapp.business\obj\Debug\netstandard2.0\filmapp.business.csproj.CoreCompileInputs.cache
+C:\Users\oguze\Desktop\filmapp\filmapp.business\obj\Debug\netstandard2.0\filmapp.business.csproj.CopyComplete
+C:\Users\oguze\Desktop\filmapp\filmapp.business\obj\Debug\netstandard2.0\filmapp.business.dll
+C:\Users\oguze\Desktop\filmapp\filmapp.business\obj\Debug\netstandard2.0\filmapp.business.pdb

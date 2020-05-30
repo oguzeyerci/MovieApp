@@ -1,0 +1,9 @@
+@if(TempData["message"]!=null)
+{
+    <script >
+    alertify.alert('Movie App','@TempData["message"]');
+    </script>
+
+}
+<h1 class="text-white">Mail Onayı</h1>
+<a href="~/account/login">Giriş Yap</a>

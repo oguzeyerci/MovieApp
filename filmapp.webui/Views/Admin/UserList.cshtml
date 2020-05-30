@@ -1,0 +1,67 @@
+@model IEnumerable<filmapp.webui.Identity.User>
+
+@if(TempData["message"]!=null)
+{
+    <script >
+    alertify.alert('Movie App','@TempData["message"]');
+    </script>
+
+}
+@section Css
+{
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+}
+@section Scripts
+{
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready( function () {
+        $('#myTable').DataTable();
+        });
+    </script>
+}
+
+
+    <h1 class="text-white">Kullanıcı Listesi</h1>
+    <hr>    
+    <table id="myTable" class="table text-white">
+        <thead class="thead-dark">
+            <tr style="text-align: center;vertical-align: middle;">
+                <th scope="col">İsim</th>
+                <th scope="col">Soyisim</th>
+                <th scope="col">Kullanıcı Adı</th>
+                <th scope="col">Email</th>
+                <th scope="col">Email Onayı</th>
+                <th style="width: 130px;" scope="col"><a href="~/Admin/UserCreate class="btn btn-sm btn-outline-secondary">Kullanıcı Ekle</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model.Count()>0)
+            {
+                @foreach(var item in Model)
+                {
+                <tr class="@(item.EmailConfirmed?"":"table-warning text-dark")" style="text-align: center;vertical-align: middle;">
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.UserName</td>
+                    <td>@item.Email</td>
+                    <td>@item.EmailConfirmed</td>
+                    <td>
+                        <a href="~/Admin/UserEdit/@item.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                        <form action="~/Admin/UserDelete" method="POST" style="display:inline;">
+                            <input type="hidden" name="UserId" value="@item.Id">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                }     
+            }else{
+                <div class="alert alert-warning">
+                    <h3>Kullanıcı Yok</h3>
+                </div>
+            }
+                   
+        </tbody>
+    </table>

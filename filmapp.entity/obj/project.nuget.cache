@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TVwCR3xHOysHdzWDreQ2ceoLmyg8pmV0/CZhPDe4i7GpJjXb4cOWPhiuKXCvNVoozFcsRXYFNUjmdKJtd//BOw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oguze\\Desktop\\filmapp\\filmapp.entity\\filmapp.entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oguze\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\oguze\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

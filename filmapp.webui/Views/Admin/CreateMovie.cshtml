@@ -1,0 +1,86 @@
+@model filmapp.webui.Models.MovieModel
+<h1 class="text-white h3">Film Ekle</h1>
+<hr>
+<div class="row">
+    <div class="col-md-8">
+        <form class="text-white" asp-controller="Admin" asp-action="createMovie" method="POST" enctype="multipart/form-data">
+            <div class="form-group row">
+                <label asp-for="Name" class="text-white col-sm-2 col-form-label">Film Adı:</label>
+                <div class="col-sm-10">
+                <input class="form-control" asp-for="Name">
+                <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>            
+            <div class="form-group row">
+                <label asp-for="Category"  class="text-white col-sm-2 col-form-label">Kategori:</label>
+                <div class="col-sm-10">
+                <select class="form-control" asp-for="Category">
+                    <option selected disabled>Kategori Seçiniz</option>
+                    <option>Romantik</option>
+                    <option>Aksiyon</option>
+                    <option>Dram</option>
+                    <option>Bilimkurgu</option>
+                    <option>Biografi</option>
+                    <option>Aile</option>
+                    <option>Komedi</option>
+                    <option>Savaş</option>
+                    <option>Belgesel</option>
+                </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Stars" class="text-white col-sm-2 col-form-label">Oyuncular:</label>
+                <div class="col-sm-10">
+                <input class="form-control" asp-for="Stars">
+                <span asp-validation-for="Stars" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Director"  class="text-white col-sm-2 col-form-label">Yönetmen:</label>
+                <div class="col-sm-10">
+                <input class="form-control" asp-for="Director">
+                <span asp-validation-for="Director" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Year" class="text-white col-sm-2 col-form-label">Çıkış Yılı:</label>
+                <div class="col-sm-10">
+                <input class="form-control" asp-for="Year">
+                <span asp-validation-for="Year" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="ImageUrl" class="text-white col-sm-2 col-form-label">Resim:</label>
+                <div class="col-sm-10">
+                <input type="hidden" asp-for="ImageUrl">
+                <input type="file" name="file">
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>                
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Review" class="text-white col-sm-2 col-form-label">İnceleme:</label>
+                <div class="col-sm-10">
+                <textarea id="editor" class="form-control" rows="3" asp-for="Review"></textarea>
+                <span asp-validation-for="Review" class="text-danger"></span>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary">Ekle</button>
+                </div>
+            </div>
+        
+        </form>
+    </div>
+</div>
+@section Scripts
+{
+    <script src="/modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/modules/ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor');
+    </script>
+}

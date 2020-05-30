@@ -1,0 +1,9 @@
+@model List<string>
+<div class="list-group">
+    <a asp-controller="Movie" asp-action="List" asp-route-id="" class="list-group-item list-group-item-light list-group-item-action" >Bütün Filmler</a>  
+    @foreach (var item in Model)
+    {
+        <a asp-controller="Movie" asp-action="List" asp-route-id=@item 
+        class="list-group-item list-group-item-light list-group-item-action @(ViewBag.SelectedCategory == item?"active":"")">@item</a>     
+    }
+</div>

@@ -1,0 +1,44 @@
+body{
+    background:#1B2836;
+    background-repeat: no-repeat;
+    background-size:fill; /*if you wanted to 'fill' the page to max size without cropping*/
+} 
+footer{
+    width: 100%;
+    bottom: 0;
+    color: White;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #5A4181;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #313d4a !Important;
+    border: solid 1px #313d4a !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #313d4a !Important;
+    border: solid 1px #313d4a;
+}
+

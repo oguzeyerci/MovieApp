@@ -1,0 +1,15 @@
+@model List<Movie>
+    
+
+<partial name="_header"></partial> 
+
+       
+
+<div class="row">
+    @foreach (var item in Model)    
+    {
+    <div class="col-lg-4 d-flex align-items-stretch">
+    @await Html.PartialAsync("_cardmovie",item)
+    </div> 
+    }
+</div>

@@ -1,0 +1,55 @@
+@model List<Movie>
+
+<div > 
+    <div class="row">        
+            
+        <div class="col-md-10">
+            <div class="row">
+                @if(Model.Count==0){
+                    
+                    <script >
+                    alertify.message('Seçili Özelliklerde Film Yok');
+                    </script> 
+                    
+                }
+                else{
+                    @foreach (var item in Model)    
+                    {
+                        <div class="col-md-4 d-flex align-items-stretch">
+                        @await Html.PartialAsync("_cardmovie",item)
+                        </div> 
+                    }
+                }    
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                    @for(int i=0;i<ViewBag.Pages;i++)
+                    {
+                        if(String.IsNullOrEmpty(ViewBag.CurrentCategory))
+                        {
+                            <li class="page-item page-item-light @(ViewBag.CurrentPage==i+1?"active":"")">
+                                <a class="page-link" href="/Movie/List?page=@(i+1)">@(i+1)</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="page-item page-item-light @(ViewBag.CurrentPage==i+1?"active":"")">
+                            <a class="page-link" href="/Movie/List/@ViewBag.CurrentCategory?page=@(i+1)">@(i+1)</a>
+                            </li>
+                        }
+                    }
+                    </ul>
+                    </nav>
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-2">
+        @await Component.InvokeAsync("Categories")
+        </div>
+    </div>    
+</div> 
+
+
+   

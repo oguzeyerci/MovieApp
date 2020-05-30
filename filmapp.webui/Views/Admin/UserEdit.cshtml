@@ -1,0 +1,80 @@
+@model filmapp.webui.Models.UserDetailModel
+<h1 class="text-white h3">Kullanıcı Bilgileri Düzenle</h1>
+<hr>
+
+<form class="text-white" asp-controller="Admin" asp-action="UserEdit" method="POST">  
+    <div class="row">  
+        <div class="col-md-12">
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>
+    </div> 
+    <div class="row"> 
+            <div class="col-md-8">  
+                <input type="hidden" name="UserId" value="@Model.UserId">    
+            
+                <div class="form-group row">
+                    <label asp-for="FirstName" class="text-white col-sm-2 col-form-label">İsim:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="FirstName">
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                </div>  
+                <div class="form-group row">
+                    <label asp-for="LastName" class="text-white col-sm-2 col-form-label">Soyisim:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="LastName">
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="UserName" class="text-white col-sm-2 col-form-label">Kullanıcı Adı:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="UserName">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="Email" class="text-white col-sm-2 col-form-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="Email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <a href="~/Admin/UserList" class="btn btn-sm btn-outline-secondary">Geri</a>
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">Değişiklikleri Kaydet</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white col-md-4">
+                    @foreach (var rolename in ViewBag.Roles)
+                    {
+                        <div class="custom-control custon-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="selectedRoles" value="@rolename" id="@rolename"
+                            @(Model.SelectedRoles.Any(i=>i==rolename)?"checked":"")>
+                            <label class="custom-control-label" for="@rolename">@rolename</label>
+                        </div>    
+                    }
+                <hr>
+                <div class="custom-control custon-checkbox">
+                    <input type="checkbox" asp-for="EmailConfirmed" class="custom-control-input">
+                    <label asp-for="EmailConfirmed" class="custom-control-label"></label>
+                </div>
+            </div>
+    </div>
+            
+</form>
+    
+    
+
+
+
+
+
+@section Scripts
+{
+    <script src="/modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}

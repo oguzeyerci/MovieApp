@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Movie App</title>
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' href='~/css/style.css'>  
+    @RenderSection("Css",false)  
+    <link rel='stylesheet' href='/modules/alertifyjs/build/css/alertify.min.css'>
+    <link rel='stylesheet' href='/modules/alertifyjs/build/css/themes/semantic.min.css'>
+    <script src="/modules/alertifyjs/build/alertify.min.js"></script>
+</head>
+<body>
+    
+    @await Html.PartialAsync("_navbar")
+        
+    
+
+    <main class="my-3">
+        <div class="container">
+    
+    
+            <div class=row>
+                <div class=col-md-12>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="py-2">
+        Movie App | 2020
+    </footer>
+    
+    <script src="/modules/jquery/dist/jquery.min.js"></script>
+    @RenderSection("Scripts",false) 
+    
+    
+
+</body>
+
+</html>
