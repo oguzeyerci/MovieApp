@@ -1,3 +1,3 @@
 # KapalıGişe
-Grup 30
-171816754 Oğuzhan Eyerci
+
+.net Core 3.1 Alıştırma
